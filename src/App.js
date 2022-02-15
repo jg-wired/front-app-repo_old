@@ -41,7 +41,7 @@ function App(props) {
   const [query, setQuery] = useState('aws');
   const [search, setSearch] = useState('aws');
 
-  var url = `{backend-ingress ADDRESS}/contents/${search}`
+  var url = `http://k8s-default-backendi-8b21b3e30e-2125744693.ap-northeast-2.elb.amazonaws.com/contents/${search}`
 
   useEffect(() => {
     const fetchData = async () => {
